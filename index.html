@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <p>clever<b>{coders}</b></p>
+        
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Projects">Projects</a></li>
+            <li id="contact"><a href="Contact" id="contact-button">Contact</a></li>
+        </ul>
+    </header>
+    <section class="info">
+        <h1>Simple. Modern. Web Design.</h1>
+        <div class="line"></div>
+        <h2>Our ultimate goal is to help our clients achieve their online goals 
+            through stunning and functional web design. We take pride in our work and strive
+            for excellence in everything we do. Contact us today to learn more about our 
+            web design services and how we can help take your online presence to the next level.</h2>
+        <button>Contact</button>
+</section>
+<section>
+    <div class="rellax" id="circle1" data-rellax-speed="-5"></div>
+    <div class="rellax" id="circle2" data-rellax-speed="-3"></div>
+    <div class="rellax" data-rellax-speed="-5" id="circle3"></div>
+</section>    
+
+</body>
+<script type="text/javascript" src="rellax.js"></script>
+<script>
+    var rellax = new Rellax('.rellax', {
+    // center: true
+    callback: function(position) {
+        // callback every position change
+        console.log(position);
+    }
+  });
+</script>
+</html>

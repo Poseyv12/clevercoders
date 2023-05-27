@@ -1,0 +1,159 @@
+li, a {
+	list-style: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    border-bottom: 2px solid rgb(255, 19, 176);
+}
+
+header {
+
+    background-color: rgb(255, 226, 241) ;
+    z-index: 2;
+    padding: 0;
+    margin-top: -35px;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+	display: flex;
+	flex-direction: row;
+	align-items: right;
+	justify-content: space-between;
+
+}
+
+p{
+    position: relative;
+    left:30px;
+    font-size: 30px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	overflow: hidden;
+	width: 80vmin;
+}
+body {
+    background-color: rgb(255, 226, 241) ;
+    overflow-x: hidden;
+	height: 200vh;
+    width: 100%;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 18px;
+    
+}
+
+.info {
+	position: relative;
+	top: 300px;
+    left: 200px;
+	width: 70vmin;
+	height: 30vmin;
+
+}
+
+button{
+    border: none;
+    width: 279px;
+    height: 75px;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: fuchsia;
+    color: black;
+    transition: .2s;
+}
+
+.line {
+    width: 200px;
+    border: 2px solid rgb(255, 19, 176);
+}
+
+#circle1, #circle2, #circle3{
+
+    background: linear-gradient(180deg, rgba(180,58,88,1) 0%, rgba(253,29,205,1) 0%, rgba(252,69,234,0) 100%);
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px -30px 20px rgb(0, 0, 0);
+
+
+}
+
+#circle1{
+    position: relative;
+    left: 1500px;
+    top: 400px;
+    height : 500px;
+    width: 500px;
+    z-index: 1;
+    animation: rotate 5s linear infinite;
+
+}
+
+#circle2{
+    position: absolute;
+    left: 1200px;
+    top: 600px;
+    height : 200px;
+    width: 200px;
+    z-index: .5;
+    animation: rotate 5s linear infinite;
+
+}
+
+#circle3 {
+    position: absolute;
+    left: 1600px;
+    top: 400px;
+    height : 200px;
+    width: 200px;
+    z-index: .5;
+    animation: rotate 5s linear infinite;
+
+}
+
+#contact{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+#contact-button{
+    color: white;
+}
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+ 
+
